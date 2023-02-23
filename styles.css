@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #000000;
+    color: #fff;
+
+}
+
+#header {
+    width: 100%;
+    height:100%;
+    background-image: url('Ring_nebula.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.bar-menu {
+    display: none;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+.container a {
+    padding-right: 50px;
+}
+
+nav {
+    display: flex;
+    align-items:center;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 250px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: all .5s ease;
+}
+
+nav ul li a:hover {
+    transform: scale(1.5);
+    color:rgb(225, 0, 60);
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+    animation: left-slide 2s ease forwards;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    animation: top-slide 2s ease forwards;
+}
+
+.header-text p {
+    animation
+}
+
+@keyframes top-slide {
+    from{transform: translateX(100%)}
+    to{transform: translatex(0)}
+}
+
+@keyframes left-slide {
+    from{transform: translateX(100%)}
+    to{transform: translateX(0)}
+}
+
+
+
+/* about */
+
+#about {
+    padding: 80px 0;
+    color: #ababaa;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-links:hover {
+    transform: scale(1.2);
+    color: #0059ff;
+    /* border: 1px solid #0059ff; */
+    border-width: .5px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px #0059ff;
+}
+
+
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* carousel */
+.carousel-images img {
+    display: none;
+}
+
+.carousel-images img:first-of-type {
+    display: block;
+}
+
+.carousel-btn {
+    align-self: center;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    transition: all .5s ease;
+}
+
+.carousel-btn:hover {
+    transform: scale(1.2);
+    color:rgba(0, 89, 255)
+}
+/* resume */
+
+#resume {
+    padding: 100px 0;
+    margin-top: 100px;
+    height: 700px;
+}
+
+.work-experience {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 25px;
+}
+
+.work-experience li {
+    list-style-type: none;
+}
+
+#job1, #job2, #job3 {
+    /* border: 2px solid red; */
+    background-color: rgba(0, 89, 255, .2);
+    padding: 15px;
+    border-radius: 5px;
+    color:rgb(161, 182, 220);
+    box-shadow: inset 0 0 15px #0059ff;
+}
+
+/* Projects */
+#projects {
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 600px){
+    
+    
+    .header-text {
+        margin-top: 100%;
+        font-size: 1rem;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+
+    .sub-title {
+        font-size: 30px;
+    }
+
+    #about {
+        padding-top: 200px;
+    }
+
+
+    .about-col-1 {
+        flex-basis: 100%;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    #resume {
+        margin-top: 200px;
+        position: relative;
+    }
+    
+    #projects {
+        padding: 150px 0;
+    }
+}
+
