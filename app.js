@@ -51,3 +51,13 @@ previous.addEventListener('click', () => {
 })
 
 
+// Scroll to top function
+
+function scrollTop (){
+    window.scrollTo({
+        top:0,
+        behavior: "smooth"
+    })
+}
+const btn = document.getElementById("top-scroll")
+btn.addEventListener('click', scrollTop)

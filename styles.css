@@ -207,8 +207,8 @@ nav ul li a:hover {
 }
 
 /* Projects */
-#projects {
-    padding-top: 150px;
+#projects .sub-title {
+    padding-bottom: 50px;
 }
 
 /* footer */
@@ -225,11 +225,16 @@ nav ul li a:hover {
     padding-left: 10px;
 }
 
-#github
+/* top scroll button */
+#top-scroll {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
 
-@media only screen and (max-width: 600px){
-    
-    
+
+@media (max-width: 600px){
     .header-text {
         margin-top: 100%;
         font-size: 1rem;
@@ -266,4 +271,5 @@ nav ul li a:hover {
         padding: 150px 0;
     }
 }
+
 
