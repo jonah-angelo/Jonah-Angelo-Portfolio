@@ -1,7 +1,6 @@
 // opens and closes the tabs in the about me page
 
 function opentab (tabname)
-
 {
     let tablinks = document.getElementsByClassName("tab-links");
     let tabcontents = document.getElementsByClassName("tab-contents");
@@ -25,7 +24,7 @@ let imgCurrentIdx = 0;
 let imgPrevIdx = 0;
 
 const images = document.getElementsByClassName('images')
-
+// based this off of the corgi carousel
 const next = document.querySelector('.next')
 next.addEventListener('click', () => {
     imgPrevIdx = imgCurrentIdx

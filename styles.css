@@ -32,7 +32,6 @@ nav {
     display: flex;
     align-items:center;
     justify-content:space-between ;
-    flex-wrap: wrap;
 }
 
 .logo {
@@ -92,12 +91,12 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.about-col-1 {
+.carousel {
     flex-basis: 35%;
 
 }
 
-.about-col-1 img {
+.carousel img {
     width: 100%;
     border-radius: 15px;
 }
@@ -241,7 +240,7 @@ nav ul li a:hover {
         width: 100%;
     }
 
-    .about-col-1 {
+    .carousel {
         flex-basis: 100%;
     }
     
@@ -255,12 +254,4 @@ nav ul li a:hover {
     #projects{
         padding-top: 100px;
     }
-}
-
-@media only screen and (min-width: 879px) and (max-width: 1024px){
-    /* #footer {
-        width: 100%;
-        border: 2px solid red;
-        float: right;
-    } */
 }
