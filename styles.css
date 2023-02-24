@@ -205,14 +205,14 @@ nav ul li a:hover {
 }
 
 /* footer */
-.footer {
+#footer {
     display:flex;
     width:100%;
     height: 50px;
     background: rgb(207, 207, 207);
 }
 
-.footer img {
+#footer img {
     width: 50px;
     padding-left: 10px;
 }
@@ -241,15 +241,26 @@ nav ul li a:hover {
         width: 100%;
     }
 
-    .footer {
-        display: flex;
-        width: 100vw;
-    }
-
     .about-col-1 {
         flex-basis: 100%;
     }
     
 }
 
+@media only screen and (min-width:768px) {
+    #projects img {
+        width: 100%;
+    }
 
+    #projects{
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 879px) and (max-width: 1024px){
+    /* #footer {
+        width: 100%;
+        border: 2px solid red;
+        float: right;
+    } */
+}
