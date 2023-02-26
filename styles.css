@@ -2,14 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     scroll-behavior: smooth;
 }
 
 body {
     background: #000000;
     color: #fff;
-
 }
 
 #header {
@@ -31,11 +30,9 @@ body {
 nav {
     display: flex;
     align-items:center;
+    background-color: #000000;
     justify-content:space-between ;
-}
-
-.logo {
-    width: 250px;
+    height: 5vh;
 }
 
 nav ul li {
@@ -65,6 +62,7 @@ nav ul li a:hover {
 
 .header-text h1 {
     font-size: 60px;
+    font-family: 'Roboto Mono', monospace;
     margin-top: 20px;
     animation: left-slide 2s ease forwards;
 }
@@ -79,16 +77,14 @@ nav ul li a:hover {
 
 /* about */
 
-#about {
+#about .container {
     padding: 80px 0;
     color: #ababaa;
     height: 100%;
-}
-
-.row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px 10%;
 }
 
 .carousel {
@@ -101,7 +97,7 @@ nav ul li a:hover {
     border-radius: 15px;
 }
 
-.about-col-2 {
+.about-bio{
     flex-basis: 60%;
 }
 
@@ -233,7 +229,7 @@ nav ul li a:hover {
     }
     
     #projects {
-        padding-top: 100px;
+        padding-top: 400px;
     }
 
     #projects img {
@@ -252,6 +248,6 @@ nav ul li a:hover {
     }
 
     #projects{
-        padding-top: 100px;
+        padding-top: 300px;
     }
 }
