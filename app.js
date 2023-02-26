@@ -1,4 +1,5 @@
 // opens and closes the tabs in the about me page
+// found out how to do this on a video from easytutorials on Youtube
 
 function opentab (tabname)
 {
